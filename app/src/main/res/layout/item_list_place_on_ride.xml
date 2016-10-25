@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container_view_place_ride"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/status_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tint="@color/colorAccent"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/place_on_ride_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/place_on_ride_phone"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Body1"/>
+
+    <ImageView
+        android:id="@+id/place_remove_from_delivering"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_clear"
+        android:tint="@color/material_red"
+        android:padding="14dp"/>
+
+</LinearLayout>

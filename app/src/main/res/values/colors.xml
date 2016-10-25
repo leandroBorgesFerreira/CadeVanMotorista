@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorAccent">#42A5F5</color>
+    <color name="textColorPrimary">@android:color/primary_text_light</color>
+    <color name="navigationBarColor">#FF5722</color>
+    <color name="buttonColor">#FF9800</color>
+    <color name="buttonSelected">#EF6C00</color>
+    <color name="drawer_backgroud_color">#FFCC80</color>
+    <color name="list_item_color1">#FFF</color>
+    <color name="list_item_color2">#EEE</color>
+    <color name="selected_list_item">#AED581</color>
+    <color name="material_light_green">#8BC34A</color>
+    <color name="material_teal">#009688</color>
+    <color name="material_red">#F44336</color>
+    <color name="material_red_light">#EF9A9A</color>
+    <color name="fab_background_color">#CCFFFFFF</color>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.simplepass.cadevanmotorista.activity.AddPathActivity"
+    tools:showIn="@layout/activity_add_path">
+
+    <EditText
+        android:id="@+id/path_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/add_place_hint"
+        style="@style/edit_text_form"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/places_of_path"
+        android:textSize="16sp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/places_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rrvIsRefreshable="true"
+            app:rrvLayoutType="LinearLayout"
+            app:rrvEmptyLayoutId="@layout/no_path_recycler_view" />
+
+            <LinearLayout
+                android:id="@+id/form_add_path_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent">
+
+                <ScrollView
+                    android:id="@+id/form_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/form_add_path_place"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">CadeVanMotorista</string>
+
+    <!-- Activities name -->
+    <string name="title_activity_add_path">Adicionar Endereços</string>
+
+    <!-- Transitions -->
+    <string name="transition_fab">transition_fab</string>
+
+    <!-- Permissões -->
+    <string name="permission_rationale_location"> Essa permissão é necessária para o
+        sabermos sua localização</string>
+
+    <!-- String relacionada ao registro e login -->
+    <string name="prompt_first_name">Nome</string>
+    <string name="prompt_last_name">Sobrenome</string>
+    <string name="prompt_birthdate">Quando você nasceu?</string>
+    <string name="prompt_phone_number">DDD + telefone</string>
+    <string name="action_register">Cadastrar</string>
+    <string name="prompt_email">Qual seu email?</string>
+    <string name="prompt_company">Cooperativa. (Opcional)</string>
+    <string name="prompt_password">Senha. Ao menos 6 digitos</string>
+    <string name="action_log_in">Entrar</string>
+    <string name="action_recover_password">Recuperar Senha</string>
+    <string name="add_place_hint">Nome da rota (Você que escolhe!)</string>
+
+    <!-- String relacionadas a cadastro de paths e places -->
+    <string name="name_of_student">Nome do aluno</string>
+    <string name="name_of_school">Nome da escola (ou instituição)</string>
+    <string name="phone">Telefone</string>
+    <string name="address">Endereço</string>
+
+    <!-- Erros do formulário -->
+    <string name="error_invalid_email">Esse endereço de email é inválido</string>
+    <string name="error_invalid_phone_number">Número de telefone inválido</string>
+    <string name="error_invalid_password_too_short">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Você precisa preencher esse campo</string>
+
+    <!-- Erros -->
+
+
+    <!-- Strings do menu Drawer-->
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Fechar</string>
+    <string name="drawer_item_share">COMPARTILHAR</string>
+    <string name="drawer_item_shared_paths">ROTAS RECEBIDAS</string>
+    <string name="drawer_item_leave">SAIR</string>
+    <string name="drawer_header_tracking_code">Código de rastreio: %s</string>
+
+    <!-- Mensagem de compartilhamento do app -->
+    <string name="share_message"> Melhore seu serviço também. Baixe o CadeVan Motorista:
+        https://play.google.com/store/apps/details?id=br.com.simplepass.cadevanmotorista </string>
+
+    <!-- No Itens -->
+    <string name="no_paths_registered"> Não há rotas cadastradas. Clique no botão abaixo para cadastrar
+        seus percursos!</string>
+    <string name="empty_list">Lista vazia.</string>
+
+    <string name="places_of_path">Lugares da rota</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_confirm_back">Deseja descartar as mudanças feitas?</string>
+    <string name="dialog_confirm_delete_path">Deseja deletar essa rota?</string>
+    <string name="dialog_confirm_delete_place">Deseja deletar essa localização?</string>
+    <string name="dialog_confirm_address">Confirma esse endereço?</string>
+    <string name="dialog_add_close_location">Essa localização é muito próxima de: " %s " e
+            foi adicionada junto com ela.</string>
+    <string name="dialog_error_place_not_found">Endereço não encontrado</string>
+    <string name="register_message">É rápido!</string>
+    <string name="dialog_wait">Aguarde</string>
+    <string name="dialog_wait_register">Registrando</string>
+    <string name="error_no_internet">Sem internet </string>
+    <string name="error_try_again">Erro. Tente novamente </string>
+    <string name="share">Compartilhar</string>
+    <string name="no_places_inside_path">Não há lugares nessa rota</string>
+    <string name="path_share_sent">Rota enviada com sucesso</string>
+
+    <!-- Menu titles -->
+    <string name="menu_confirm">confirma</string>
+    <string name="menu_confirm_add_place">adiciona</string>
+    <string name="menu_cancel_add_place">cancel</string>
+    <string name="menu_delete">deletar</string>
+
+    <!-- Buttons -->
+    <string name="cancel">cancelar</string>
+    <string name="save">salvar</string>
+    <string name="btn_split">SEPARAR</string>
+
+    <!-- Text View -->
+    <string name="paths_registered">Rotas cadastradas</string>
+    <string name="title_activity_on_ride">OnRideActivity</string>
+    <string name="recover_password_message">Informe seu telefone</string>
+
+    <!-- Google Maps Distance Matrix API KEY  -->
+    <string name="distance_matrix_key">AIzaSyAoazllhnYM8bmj7Vscpfx-C4x7X7gbzoo</string>
+    <string name="google_services_key">AIzaSyCHU4kiOBrB-W4GeMplGMzIsK5JD_DS05A</string>
+    <string name="title_activity_edit_place">EditPlaceActivity</string>
+
+    <!-- Fab -->
+    <string name="student">Aluno</string>
+    <string name="school">Escola</string>
+    <string name="go_to">Rota de ida</string>
+    <string name="come_back">Rota de volta</string>
+
+    <!-- Location -->
+    <string name="send_time_to_arrive">Sua van chega em: %s</string>
+    <string name="stoped"> parado </string>
+    <string name="very_close">Nas proximidades</string>
+    <string name="van_arrived">Sua van chegou!</string>
+
+    <!-- Butoes em geral -->
+    <string name="btn_delete"> Deletar </string>
+    <string name="send">ENVIAR</string>
+
+    <!-- Path -->
+    <string name="path_go_to">Rota de ida</string>
+    <string name="path_come_back">Rota de volta</string>
+
+    <!-- Hints -->
+    <string name="hint_student_address">Endereço do aluno</string>
+    <string name="hint_school_address">Onde você estaciona para pegar os alunos</string>
+    <string name="hint_phone">DDD + Telefone</string>
+    <string name="hint_student_name">Nome do aluno</string>
+    <string name="hint_school_name">Nome da escola</string>
+    <string name="hint_share_phone">Número do motorista</string>
+
+    <!-- Recover password -->
+    <string name="email_sent"> Email enviado para %s </string>
+
+    <!-- Toast & SnackBar -->
+    <string name="notify_inside_place">Automático - Você entrou em: %s</string>
+    <string name="notify_next_place">Automático - Você está indo para: %s</string>
+    <string name="entity_splited">Separação realizada</string>
+    <string name="only_one_entity">Não é possível separar. Há somente um lugar</string>
+
+    <!-- Push -->
+    <string name="shared_path_received">Rota recebida. De: %s</string>
+
+    <!-- Tracking Code -->
+    <string name="tracking_code_base">1135</string>
+
+    <!-- Colegios -->
+    <string-array name="list_of_schools">
+        <item>Fumec</item>
+        <item>Marista</item>
+        <item>Puc</item>
+        <item>Santo Antonio</item>
+        <item>Loyola</item>
+        <item>UFMG</item>
+        <item>UEMG</item>
+        <item>Guignard</item>
+        <item>Padre Machado</item>
+        <item>Nossa Senhora das Dores</item>
+        <item>Coleguium</item>
+        <item>Soma</item>
+        <item>Mais</item>
+        <item>Bernoulli</item>
+        <item>Unimaster</item>
+        <item>Magnum</item>
+        <item>Santo Agostinho</item>
+        <item>UniBH</item>
+        <item>UNA</item>
+        <item>Pitagoras</item>
+        <item>Santa Doreteia</item>
+        <item>Santa Maria</item>
+        <item>Sagrado Coracao de Maria</item>
+        <item>Padre Eutaquio</item>
+        <item>Arnaldo</item>
+        <item>Arnaldinho</item>
+        <item>Fei Orlando</item>
+        <item>Pio XII</item>
+        <item>Salesiano</item>
+        <item>Dom Helder Camara</item>
+        <item>Milton Campos</item>
+        <item>Newton Paiva</item>
+        <item>FEAD</item>
+        <item>Colegio Batista</item>
+        <item>Colegio Colibri</item>
+        <item>Colegio Ruibarbosa</item>
+        <item>Promove</item>
+        <item>Cotemig</item>
+        <item>Cefet</item>
+        <item>Coltec</item>
+        <item>Helena Bicalho</item>
+        <item>Isabela Hendrix</item>
+        <item>Tiradentes</item>
+        <item>Colegio Militar</item>
+        <item>Jean Piachet</item>
+        <item>Pedro II</item>
+        <item>Cumon</item>
+        <item>Ciencias Medicas</item>
+        <item>Albert Einstein</item>
+        <item>Escola de Engenharia Kennedy</item>
+        <item>Polimig</item>
+        <item>Senai</item>
+        <item>Sebrae</item>
+        <item>Feamig</item>
+        <item>IFMG</item>
+        <item>Academia de Policia Militar de Minas Gerais</item>
+        <item>Universo</item>
+        <item>Facisa</item>
+        <item>Anhanguera</item>
+        <item>Unipac</item>
+        <item>Unifenas</item>
+        <item>Ibmec</item>
+        <item>Faminas</item>
+        <item>Dom Cabral</item>
+        <item>Sao Camilo</item>
+        <item>INCISA</item>
+
+    </string-array>
+    <string name="title_activity_recover_password">Recuperar Senha</string>
+    <string name="title_activity_shared_paths">Rotas Compartilhadas</string>
+
+</resources>

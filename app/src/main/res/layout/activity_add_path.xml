@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AddPathActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/activity_main"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.MainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <include layout="@layout/toolbar_no_logo"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include layout="@layout/content_add_path" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <FrameLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/fab_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DD999999"
+            android:visibility="invisible"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="2dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@android:color/white"
+            android:src="@mipmap/ic_add"
+            android:transitionName="@string/transition_fab"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin">
+
+            <TextView
+                android:id="@+id/fab_add_student_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                style="@style/fab_textview_menu"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add_student"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="2dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:tint="@android:color/white"
+                android:src="@mipmap/ic_person" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="130dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/fab_add_school_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school"
+                android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                style="@style/fab_textview_menu"
+                android:clickable="false"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_add_school"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="2dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="invisible"
+                android:tint="@android:color/white"
+                android:src="@mipmap/ic_place"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

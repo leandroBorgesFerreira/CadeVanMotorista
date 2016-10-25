@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_add_path"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        style="@style/TextAppearance.AppCompat.Inverse"
+        android:textSize="14sp"
+        android:text="@string/name_of_student"
+        android:scaleX="0"
+        android:scaleY="0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_person"
+            android:tint="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/form_place_name"
+            android:layout_marginStart="@dimen/form_edit_text_margin_start"
+            android:layout_marginLeft="@dimen/form_edit_text_margin_start"
+            android:hint="@string/hint_student_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_form">
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/TextAppearance.AppCompat.Inverse"
+        android:textSize="14sp"
+        android:text="@string/phone"
+        android:scaleX="0"
+        android:scaleY="0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_smartphone"
+            android:tint="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/form_place_country_phone"
+            android:layout_marginStart="@dimen/form_edit_text_margin_start"
+            android:layout_marginLeft="@dimen/form_edit_text_margin_start"
+            android:layout_width="wrap_content"
+            android:text="+55"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_form"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/form_place_phone"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_phone"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_form"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/form_place_address"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/TextAppearance.AppCompat.Inverse"
+        android:textSize="14sp"
+        android:text="@string/address"
+        android:scaleX="0"
+        android:scaleY="0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_place"
+            android:tint="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@id/form_place_address"
+            android:layout_marginStart="@dimen/form_edit_text_margin_start"
+            android:layout_marginLeft="@dimen/form_edit_text_margin_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_student_address"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_form" />
+
+        <ImageButton
+            android:id="@+id/form_place_my_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_my_location"
+            android:tint="@android:color/white"
+            style="@style/button_default"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/TextAppearance.AppCompat.Inverse"
+        android:textSize="14sp"
+        android:text="@string/school"
+        android:scaleX="0"
+        android:scaleY="0"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0"
+        android:scaleY="0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_school"
+            android:tint="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/form_place_school_name"
+            android:layout_marginStart="@dimen/form_edit_text_margin_start"
+            android:layout_marginLeft="@dimen/form_edit_text_margin_start"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_school_name"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_form" />
+
+    </LinearLayout>
+
+</LinearLayout>

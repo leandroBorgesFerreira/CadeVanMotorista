@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.simplepass.cadevanmotorista.activity.AddPathActivity">
+
+    <item android:id="@+id/menu_confirm_add_path"
+        android:title="@string/menu_confirm"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_done_all"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_confirm_add_place"
+        android:title="@string/menu_confirm_add_place"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_done"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item android:id="@+id/menu_cancel_add_place"
+        android:title="@string/menu_cancel_add_place"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_clear"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item android:id="@+id/menu_delete_path"
+        android:title="@string/menu_delete"
+        android:orderInCategory="103" />
+</menu>

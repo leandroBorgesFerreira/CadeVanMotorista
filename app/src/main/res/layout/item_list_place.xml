@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container_view_place"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp">
+
+    <ImageView
+        android:id="@+id/place_move_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_more"
+        android:tint="@color/colorAccent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:transitionName="toolbar"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+        <!--<TextView
+            android:id="@+id/place_phone"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Body1"/>-->
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/place_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_pencil"
+        android:background="@drawable/button_shape_no_brackground"
+        android:tint="@color/colorAccent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/place_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_delete"
+        android:background="@drawable/button_shape_no_brackground"
+        android:tint="@color/material_red"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>
